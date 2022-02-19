@@ -3,7 +3,7 @@
 
 <head>
     <title>Mayank Khurmai</title>
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
@@ -44,12 +44,45 @@
         </fieldset>
 
         <fieldset id="content-div-two">
-                <legend>2) Calculator</legend>
-                    hello
+            <legend>2) Calculator</legend>
+            <div id="content-div-two-inside">
+                <form>
+                <table>
+                    <tr>
+                        <td colspan="4"><input type="text" id="show" placeholder="0"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="num" value="1" name="btn1" onclick="display(btn1.value)"> 1</button></td>
+                        <td><button type="button" class="num" value="2" name="btn2" onclick="display(btn2.value)"> 2</button></td>
+                        <td><button type="button" class="num" value="3" name="btn3" onclick="display(btn3.value)"> 3</button></td>
+                        <td><button type="button" class="ynum" value="+" name="btnAdd" onclick="display(btnAdd.value)"> +</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="num" value="4" name="btn4" onclick="display(btn4.value)"> 4</button></td>
+                        <td><button type="button" class="num" value="5" name="btn5" onclick="display(btn5.value)"> 5</button></td>
+                        <td><button type="button" class="num" value="6" name="btn6" onclick="display(btn6.value)"> 6</button></td>
+                        <td><button type="button" class="ynum" value="-" name="btnMinus" onclick="display(btnMinus.value)"> -</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="num" value="7" name="btn7" onclick="display(btn7.value)"> 7</button></td>
+                        <td><button type="button" class="num" value="8" name="btn8" onclick="display(btn8.value)"> 8</button></td>
+                        <td><button type="button" class="num" value="9" name="btn9" onclick="display(btn9.value)"> 9</button></td>
+                        <td><button type="button" class="ynum" value="*" name="btnMul" onclick="display(btnMul.value)"> *</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="rnum" value="C" name="btnC" onclick="display(btnC.value)"> C</button></td>
+                        <td><button type="button" class="num" value="0" name="btn0" onclick="display(btn0.value)"> 0</button></td>
+                        <td><button type="button" class="num" value="=" name="btnEqual" onclick="calculate()"> =</button></td>
+                        <td><button type="button" class="ynum" value="/" name="btnDiv" onclick="display(btnDiv.value)"> /</button></td>
+                    </tr>
+                </table>  
+                </form>  
+            </div>
         </fieldset>
 
     </div>
 
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
