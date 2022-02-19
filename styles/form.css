@@ -1,6 +1,7 @@
 @charset "UTF-8";
 *{
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body{
@@ -9,13 +10,104 @@ body{
     background-color: aliceblue;
 }
 
-
 #outer-div{
-    width: 90%;
-    height: 640px;
+    width: 78%;
+    padding: 10px;
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: white;
     border: 2px solid lightslategrey;
+}
+
+img{
+    height: 150px;
+    width: 250px;
+}
+
+#proposal-form{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#paragraph-1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul{
+    padding: 0px;
+}
+
+ul li{
+    margin-left: 15px;
+}
+
+#box-table, #details-table-p1, #details-table-p2{
+    width: 100%;
+}
+
+#box-table td{
+    border: 1px solid black;
+}
+
+#box-table .td-no-border{
+    border: 0px !important;
+}
+
+#box-table .form-photo-div{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.section-a{
+    background-color: #fd8904;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 2px;
+    text-align: center;
+}
+
+td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.w-100-text{
+    float: left;
+}
+
+.w-100-div{
+    overflow: auto;
+    padding: 2px;
+}
+
+.w-100-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.text-top{
+    vertical-align: text-top;
+}
+
+.warning-italic{
+    font-style: italic;
+    text-align: center;
 }
